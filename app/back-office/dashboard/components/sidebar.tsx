@@ -1,50 +1,37 @@
 "use client"
+import Link from "next/link";
 import css from "./cssSidebar.module.css";
 export default function SideBar() {
     return (
         <div className={css.layer__1}>
 
             <div className={css.main_menu}>
-                Menu
+                Dashboard
             </div>
             <div className={css.wrap_submenu}>
                 <div className={css.submenu}>
-                    <a href="#">
-                        Submenu Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deserunt.
-                    </a>
-                </div>
-                <div className={css.submenu}>
-                    <a href="#">
-                        Submenu 2
-                    </a>
-                </div>
-                <div className={css.submenu}>
-                    <a href="#">
-                        Submenu 3
-                    </a>
+                    <Link href="/back-office/dashboard">
+                        Home
+                    </Link>
                 </div>
             </div>
 
             <div className={css.main_menu}>
-                Menu 2
+                Article
             </div>
             <div className={css.wrap_submenu}>
                 <div className={css.submenu}>
                     <a href="#">
-                        Submenu Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, deserunt.
+                        All article
                     </a>
                 </div>
                 <div className={css.submenu}>
-                    <a href="#">
-                        Submenu 2
-                    </a>
-                </div>
-                <div className={css.submenu}>
-                    <a href="#">
-                        Submenu 3
-                    </a>
+                    <Link href="/back-office/dashboard/article/create-new-article">
+                        Create new article
+                    </Link>
                 </div>
             </div>
+
         </div>
     );
 }

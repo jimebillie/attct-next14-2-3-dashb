@@ -1,9 +1,10 @@
-import LayoutMain from "./components/layoutMain";
+import Client from "./client";
+import LayoutMain from "../../components/layoutMain";
 export default function page() {
     return (
         <>
             <LayoutMain>
-                Home dashboard.
+                <Client />
             </LayoutMain>
         </>
     );
