@@ -1,0 +1,3 @@
+.layer__1{
+    @apply text-zinc-600 fixed w-full top-0 left-0 right-0 bottom-0 overflow-y-auto;
+}

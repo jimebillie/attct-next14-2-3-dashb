@@ -1,0 +1,12 @@
+.layer__1{
+    @apply absolute w-[300px] bg-zinc-50 border-[1px] border-zinc-200 top-0 left-0 right-0 bottom-0 pt-[50px] px-[20px] overflow-x-auto overflow-y-auto z-10
+}
+.main_menu{
+    @apply font-semibold
+}
+.wrap_submenu{
+    @apply pl-3 ml-3 py-3 border-l-[2px] border-zinc-200 underline
+}
+.submenu{
+    @apply line-clamp-1 text-sm my-2
+}
